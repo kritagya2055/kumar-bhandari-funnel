@@ -5,12 +5,22 @@ export default function LandingPage() {
   return (
     <main style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
 
-      <header style={{ padding: '1.2rem 2rem', textAlign: 'center', borderBottom: '1px solid var(--border-color)' }}>
-        <h1 style={{ fontSize: '1.2rem', letterSpacing: '0.2em', fontWeight: 400 }}>
+      {/* HEADER */}
+      <header style={{
+        padding: '1.2rem 2rem',
+        textAlign: 'center',
+        borderBottom: '1px solid var(--border-color)'
+      }}>
+        <h1 style={{
+          fontSize: '1.2rem',
+          letterSpacing: '0.2em',
+          fontWeight: 400
+        }}>
           GROWTH
         </h1>
       </header>
 
+      {/* HERO SECTION */}
       <section style={{
         flex: 1,
         display: 'flex',
@@ -24,8 +34,8 @@ export default function LandingPage() {
         <h2 style={{
           fontSize: '3rem',
           marginBottom: '1rem',
-          color: 'var(--text-primary)',
-          fontWeight: 500
+          fontWeight: 500,
+          color: 'var(--text-primary)'
         }}>
           Predictable Systems.
         </h2>
@@ -39,7 +49,7 @@ export default function LandingPage() {
           Apply for a free 1-hour strategy call to identify what&apos;s stopping your growth.
         </p>
 
-        {/* FIXED FORM (THIS WAS YOUR ERROR) */}
+        {/* FIXED FLODESK FORM WRAPPER */}
         <div style={{ width: '100%', maxWidth: '520px' }}>
           <NewsletterForm />
         </div>
